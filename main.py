@@ -35,8 +35,14 @@ def main():
         return
     init()
 
+    print(f"URL текущего сервера: {CURRENT_SERVER.decode()}")
     print(f"Введите URL нужного сервера. Пример: {DEFAULT_SERVER_URL}")
-    url = input("URL: ")
+
+    try:
+        url = input("URL: ")
+    except KeyboardInterrupt:
+        print("\nОтмена")
+        return
 
     if len(url) != URL_LEN:
         print("Ошибка! Адрес сервера имеет недействительную длину!")
@@ -45,7 +51,6 @@ def main():
     convert(url.strip().encode('ascii'))
 
     print("Готово :3")
-    input()
 
 
 if __name__ == '__main__':
