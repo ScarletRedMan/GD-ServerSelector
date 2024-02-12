@@ -4,7 +4,7 @@ import os.path as fp
 
 GD_FILE_NAME = 'GeometryDash.exe'
 CURRENT_SERVER = b''
-DEFAULT_SERVER_URL = 'http://www.boomlings.com/database'
+DEFAULT_SERVER_URL = 'https://www.boomlings.com/database'
 URL_LEN = len(DEFAULT_SERVER_URL)
 
 
